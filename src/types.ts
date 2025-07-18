@@ -11,6 +11,7 @@ export type CollectionPages = CollectionEntry<Pages>
 export type ProjectData = Array<{
   title: string
   projects: Array<{
+    slug: string
     text: string
     description?: string
     icon?: string

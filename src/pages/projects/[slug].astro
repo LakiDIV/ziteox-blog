@@ -1,0 +1,47 @@
+---
+import { projectData } from './data'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { getEntry } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
+
+export function getStaticPaths() {
+  const slugs = projectData.flatMap((group) => group.projects.map((p) => p.slug))
+  return slugs.map((slug) => ({ params: { slug } }))
+}
+
+const { slug } = Astro.params
+
+// Find the project by slug
+const group = projectData.find((g) => g.projects.some((p) => p.slug === slug))
+const project = group ? group.projects.find((p) => p.slug === slug) : null
+if (!project) throw new Error('Project not found')
+
+// Try to load markdown file for the project using getEntry
+let mdEntry: CollectionEntry<'projects'> | null = null
+try {
+  mdEntry = (await getEntry('projects', slug)) as CollectionEntry<'projects'> | null
+} catch (e) {
+  mdEntry = null
+}
+const Content = mdEntry ? (await mdEntry.render()).Content : null
+---
+
+<BaseLayout title={project.text} description={project.description}>
+  <h1 class="text-3xl font-bold mb-2">{project.text}</h1>
+  <p class="text-lg text-gray-500 mb-6">{project.description}</p>
+  <hr class="my-8 border-gray-300" />
+  {
+    Content ? (
+      <article class="prose">
+        <Content />
+      </article>
+    ) : null
+  }
+  <a href={project.href} download class="block mt-8">
+    <button
+      class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition-colors duration-150"
+    >
+      Download
+    </button>
+  </a>
+</BaseLayout>

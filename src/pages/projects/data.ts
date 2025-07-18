@@ -2,87 +2,23 @@ import type { ProjectData } from '@/types'
 
 export const projectData: ProjectData = [
   {
-    title: 'Projects Group',
+    title: 'Tools We Love',
     projects: [
       {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
+        slug: 'xnconvert',
+        text: 'XnConvert',
+        description: 'XnConvert is a fast, powerful and free cross-platform batch image converter.',
         icon: 'i-carbon-campsite',
-        href: '/',
+        href: 'https://www.xnview.com/en/xnconvert/',
       },
       {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
+        slug: 'handbrake',
+        text: 'HandBrake',
+        description: 'HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.',
         icon: 'i-carbon-campsite',
-        href: '/',
+        href: 'https://handbrake.fr/',
       },
-    ],
-  },
-  {
-    title: 'Projects Group',
-    projects: [
-      {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
-        icon: 'i-carbon-campsite',
-        href: '/',
-      },
-      {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
-        icon: 'i-carbon-campsite',
-        href: '/',
-      },
-      {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
-        icon: 'i-carbon-campsite',
-        href: '/',
-      },
-    ],
-  },
-  {
-    title: 'Project Name',
-    projects: [],
-  },
-  {
-    title: 'Projects Group',
-    projects: [
-      {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
-        icon: 'i-carbon-campsite',
-        href: '/',
-      },
-      {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
-        icon: 'i-carbon-campsite',
-        href: '/',
-      },
-      {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
-        icon: 'i-carbon-campsite',
-        href: '/',
-      },
-      {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
-        icon: 'i-carbon-campsite',
-        href: '/',
-      },
-    ],
-  },
-  {
-    title: 'Projects Group',
-    projects: [
-      {
-        text: 'Project Name',
-        description: 'Your project description information is a long piece of text.',
-        icon: 'i-carbon-campsite',
-        href: '/',
-      },
+
     ],
   },
 ]
