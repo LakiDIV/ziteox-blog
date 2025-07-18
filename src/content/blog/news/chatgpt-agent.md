@@ -7,8 +7,6 @@ tag: News
 video: true
 ---
 
-# OpenAI Just Dropped ChatGPT Agent — Here's Why It's a Game-Changer
-
 OpenAI just turned ChatGPT from a smart chatbot into a **real digital assistant**.
 
 Meet **ChatGPT Agent** — a new feature that gives ChatGPT the power to *think, plan, and act*. It can browse websites, fill out forms, run code, and even generate reports or slide decks — all without you lifting a finger.
