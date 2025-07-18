@@ -25,14 +25,14 @@ The Agent blends browsing, research, and execution. A few wild examples:
 
 You give it the *intent* — it handles the execution from A to Z.
 
-<iframe
-  width="640"
-  height="360"
-  src="https://www.youtube.com/embed/2wzGS_WUZYQ?autoplay=1&mute=1&controls=0&loop=1&playlist=2wzGS_WUZYQ"
-  title="ChatGPT agent demo"
-  frameborder="0"
-  allowfullscreen
-></iframe>
+<div class="responsive-video">
+  <iframe
+    src="https://www.youtube.com/embed/2wzGS_WUZYQ?autoplay=1&mute=1&controls=0&loop=1&playlist=2wzGS_WUZYQ"
+    title="ChatGPT agent demo"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+</div>
 
 ## Why It’s a Big Deal
 
