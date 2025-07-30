@@ -71,4 +71,4 @@ Production files will be in the `dist` folder.
 ## 📄 License
 
 MIT License © [Ziteox](https://github.com/ziteox)  
-Original base: [astro-theme-vitesse](https://github.com/kevinwong865/astro-theme-vitesse) by [@kevinwong865](https://github.com/kevinwong865)
+Original base: [astro-theme-vitesse](https://github.com/kieranwv/astro-theme-vitesse) by [@kevinwong865](https://github.com/kieranwv)
