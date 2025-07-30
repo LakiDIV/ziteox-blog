@@ -1,105 +1,74 @@
-# Vitesse theme for Astro
+# Ziteox Blog — Astro-Powered Portfolio & Blog
 
-A minimal, SEO-friendly portfolio and blog theme for Astro, supports Vue and UnoCSS.
+A minimal, fast, and SEO-friendly blog & portfolio site built with [Astro](https://astro.build), using the **Vitesse** theme by [@kevinwong865](https://github.com/kevinwong865). Currently live at 👉 [**blog.ziteox.com**](https://blog.ziteox.com)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0624323a-339f-48da-8b28-03037d664c40/deploy-status)](https://app.netlify.com/sites/astro-theme-vitesse/deploys)
+> This is a customized and maintained version of the [astro-theme-vitesse](https://github.com/kevinwong865/astro-theme-vitesse) template.
 
-## Preview
+---
 
-![Preview Image](./public/preview.jpg)
+## 🚀 Live Preview
 
-## Features
+![Preview](./public/preview.jpg)
 
-- 100 / 100 Lighthouse performance.
-- Responsive.
-- SEO-friendly.
-- Light / Dark Theme.
-- Markdown support.
-- <a target="_blank" href="https://mdxjs.com/">MDX</a> (components in your markdown) support.
-- <a target="_blank" href="https://vuejs.org/">Vue</a> SFC component support.
-- Auto generated sitemap and RSS Feed <a target="_blank" href="https://vueuse.org/">VueUse</a> & <a target="_blank" href="https://lodash.com/">Lodash</a> support.
-- Use the <a target="_blank" href="https://unocss.dev/">UnoCSS</a> for style, it's fast.
+Explore the blog: [**blog.ziteox.com**](https://blog.ziteox.com)
 
-## Lighthouse Performance
+---
 
-![Lighthouse Performance Image](./public/lighthouse.jpg)
+## ⚡ Features
 
-## Quick Start
+- Perfect Lighthouse scores
+- Fully responsive, mobile-first layout
+- SEO-optimized with meta tags, sitemap, and RSS
+- Dark & light theme toggle
+- Markdown & MDX support
+- Vue 3 component support
+- UnoCSS for fast and utility-first styling
+- Deployed on Netlify
 
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kevinwong865/astro-theme-vitesse)
+---
 
-Click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+## 📈 Future Improvements
 
-If you  just want to develop locally, you can [create a repo](https://github.com/kevinwong865/astro-theme-vitesse/generate) from this template on GitHub.
+Ziteox Blog is still evolving. Upcoming upgrades include:
 
-## Usage
+- Headless CMS integration for easier content management  
+- Author support & content tagging  
+- Better performance monitoring  
+- Enhanced SEO and share card previews  
+- More animations & page transitions
 
-Just run and visit http://localhost:1977.
+Stay tuned and feel free to fork or contribute.
+
+---
+
+## 🛠️ Quick Start
+
+Clone & run locally:
 
 ```bash
-npn run dev
+git clone https://github.com/ziteox/ziteox-blog
+cd ziteox-blog
+npm install
+npm run dev
 ```
 
-> Node.js version 18 or higher is required for this project.
+Then open `http://localhost:1977`
 
-To build the App, you can run:
+---
+
+## 🧱 Build & Preview
 
 ```bash
 npm run build
-```
-
-You will then see the `dist` folder generated for publishing, which you can preview locally with the following command.
-
-```bash
 npm run preview
 ```
 
-## Use pnpm / yarn
+Production files will be in the `dist` folder.
 
-If you want to use pnpm or yarn as a package management tool, please refer to the following steps.
 
-> If `preinstall` exists in `scripts`, remove it first.
+---
 
-### pnpm
+## 📄 License
 
-Replace `"pre-commit": "npx lint-staged"` in package.json with `"pre-commit": "pnpm lint-staged"`.
-
-And replace `"*": "npm run lint:fix"` with `"*": "pnpm lint:fix"`.
-
-Like this:
-
-```json
-{
-  // ...
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "pnpm lint:fix"
-  }
-}
-```
-
-### yarn
-
-Replace `"pre-commit": "npx lint-staged"` in package.json with `"pre-commit": "yarn lint-staged"`.
-
-And replace `"*": "npm run lint:fix"` with `"*": "yarn lint:fix"`.
-
-Like this:
-
-```json
-{
-  // ...
-  "simple-git-hooks": {
-    "pre-commit": "yarn lint-staged"
-  },
-  "lint-staged": {
-    "*": "yarn lint:fix"
-  }
-}
-```
-
-## License
-
-[MIT License](./LICENSE) © 2024 [Kieran Wong](https://github.com/kieranwong9865/)
+MIT License © [Ziteox](https://github.com/ziteox)  
+Original base: [astro-theme-vitesse](https://github.com/kevinwong865/astro-theme-vitesse) by [@kevinwong865](https://github.com/kevinwong865)
